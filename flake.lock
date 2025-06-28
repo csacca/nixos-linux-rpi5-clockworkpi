@@ -21,6 +21,23 @@
         "type": "github"
       }
     },
+    "clockworkPiLinux": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1750177431,
+        "narHash": "sha256-FW8jrkZgMMoLvBVoz74k3fz46Raa5udJ/YIJZ1mgpTg=",
+        "owner": "ak-rex",
+        "repo": "ClockworkPi-linux",
+        "rev": "85b196fde0dae6941e54290324e89d57b2d8ab90",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ak-rex",
+        "repo": "ClockworkPi-linux",
+        "rev": "85b196fde0dae6941e54290324e89d57b2d8ab90",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1751011381,
@@ -40,6 +57,7 @@
     "root": {
       "inputs": {
         "blueprint": "blueprint",
+        "clockworkPiLinux": "clockworkPiLinux",
         "nixpkgs": "nixpkgs"
       }
     },
