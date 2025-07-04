@@ -14,7 +14,7 @@
 
     clockworkPiLinux = {
       # branch == "rpi-6.12.y"
-      url = "github:ak-rex/ClockworkPi-linux/85b196fde0dae6941e54290324e89d57b2d8ab90";
+      url = "github:ak-rex/ClockworkPi-linux/59b5c72214c967316b6de5916ef2ee63a17baee1";
       flake = false;
     };
   };
@@ -23,6 +23,6 @@
   outputs = inputs:
     inputs.blueprint {
       inherit inputs;
-      # systems = ["aarch64-linux"];
+      systems = ["x86_64-linux" "aarch64-linux"];
     };
 }
