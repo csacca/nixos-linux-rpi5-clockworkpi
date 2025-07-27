@@ -92,6 +92,7 @@ in
       pkgs.jq # JSON filter
       pkgs.git # for commit step
       pkgs.python312
+      pkgs.cachix
       getLatestGreenCommit
       updateKernel
     ];
