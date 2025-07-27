@@ -1,4 +1,5 @@
 {
+  pname,
   pkgs,
   inputs,
   ...
@@ -6,14 +7,11 @@
   inherit (pkgs) lib;
   inherit (lib) mkForce;
 
-  pname = "linux-rpi5-clockworkpi";
-
   # choose native vs cross tool-chain
   targetPkgs =
     if pkgs.stdenv.hostPlatform.isAarch64
     then pkgs
     else pkgs.pkgsCross.aarch64-multiplatform;
-  # targetPkgs = pkgs;
 
   # helpers to read kernel version fields from Makefile
   src = inputs.clockworkPiLinux; # ak-rex's patched rpi-6.12.y tree

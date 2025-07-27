@@ -91,6 +91,7 @@ in
       pkgs.gh # GitHub CLI
       pkgs.jq # JSON filter
       pkgs.git # for commit step
+      pkgs.python312
       getLatestGreenCommit
       updateKernel
     ];
