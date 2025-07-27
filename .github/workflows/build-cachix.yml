@@ -1,6 +1,8 @@
 name: "Build ClockworkPi kernel (arm64)"
 on:
   workflow_dispatch:
+env:
+  CACHIX_NAME: ${{ vars.CACHIX_NAME }}
 jobs:
   build-kernel:
     runs-on: ubuntu-24.04-arm
