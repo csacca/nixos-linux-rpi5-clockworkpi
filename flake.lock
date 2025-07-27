@@ -8,11 +8,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1744632722,
-        "narHash": "sha256-0chvqUV1Kzf8BMQ7MsH3CeicJEb2HeCpwliS77FGyfc=",
+        "lastModified": 1753215027,
+        "narHash": "sha256-JvMF7CODUM3C475oApJ8oQ0ym3tvBWkL7C5M2SDAW2g=",
         "owner": "numtide",
         "repo": "blueprint",
-        "rev": "49bbd5d072b577072f4a1d07d4b0621ecce768af",
+        "rev": "9f47c131a6bcc8796df7c76450e7883247339dc6",
         "type": "github"
       },
       "original": {
@@ -21,7 +21,50 @@
         "type": "github"
       }
     },
-    "clockworkPiLinux": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1753429684,
+        "narHash": "sha256-9h7+4/53cSfQ/uA3pSvCaBepmZaz/dLlLVJnbQ+SJjk=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "7fd36ee82c0275fb545775cc5e4d30542899511d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "blueprint": "blueprint",
+        "nixpkgs": "nixpkgs",
+        "rpi-bluez-firmware": "rpi-bluez-firmware",
+        "rpi-clockworkpi-linux": "rpi-clockworkpi-linux",
+        "rpi-firmware": "rpi-firmware",
+        "rpi-firmware-nonfree": "rpi-firmware-nonfree"
+      }
+    },
+    "rpi-bluez-firmware": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1741017538,
+        "narHash": "sha256-t+D4VUfEIov83KV4wiKp6TqXTHXGkxg/mANi4GW7QHs=",
+        "owner": "RPi-Distro",
+        "repo": "bluez-firmware",
+        "rev": "2bbfb8438e824f5f61dae3f6ebb367a6129a4d63",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RPi-Distro",
+        "repo": "bluez-firmware",
+        "rev": "2bbfb8438e824f5f61dae3f6ebb367a6129a4d63",
+        "type": "github"
+      }
+    },
+    "rpi-clockworkpi-linux": {
       "flake": false,
       "locked": {
         "lastModified": 1750764574,
@@ -38,27 +81,38 @@
         "type": "github"
       }
     },
-    "nixpkgs": {
+    "rpi-firmware": {
+      "flake": false,
       "locked": {
-        "lastModified": 1751271578,
-        "narHash": "sha256-P/SQmKDu06x8yv7i0s8bvnnuJYkxVGBWLWHaU+tt4YY=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "3016b4b15d13f3089db8a41ef937b13a9e33a8df",
+        "lastModified": 1750846869,
+        "narHash": "sha256-VpjzwVzjgwBRXIfeGblnPzgjYyw7Nr1GqyjKtGnuduk=",
+        "owner": "raspberrypi",
+        "repo": "firmware",
+        "rev": "7022a895240b2f853d9035ab61616b646caf7b3a",
         "type": "github"
       },
       "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
+        "owner": "raspberrypi",
+        "repo": "firmware",
+        "rev": "7022a895240b2f853d9035ab61616b646caf7b3a",
         "type": "github"
       }
     },
-    "root": {
-      "inputs": {
-        "blueprint": "blueprint",
-        "clockworkPiLinux": "clockworkPiLinux",
-        "nixpkgs": "nixpkgs"
+    "rpi-firmware-nonfree": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1744123009,
+        "narHash": "sha256-5ywIPs3lpmqVOVP3B75H577fYkkucDqB7htY2U1DW8U=",
+        "owner": "RPi-Distro",
+        "repo": "firmware-nonfree",
+        "rev": "c9d3ae6584ab79d19a4f94ccf701e888f9f87a53",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RPi-Distro",
+        "repo": "firmware-nonfree",
+        "rev": "c9d3ae6584ab79d19a4f94ccf701e888f9f87a53",
+        "type": "github"
       }
     },
     "systems": {
